@@ -3,25 +3,25 @@ from time import sleep
 from os import system
 from classe1 import Nave
 
-# system("cls")
+system("cls")
 
-# print("Durante um período de escassez de alimentos")
-# sleep(2)
-# print("cientistas descobrem que a Terra tem uma data concreta para acabar...")
-# sleep(2)
-# print("20 anos!!!")
-# sleep(3)
+print("Durante um período de escassez de alimentos")
+sleep(2)
+print("cientistas descobrem que a Terra tem uma data concreta para acabar...")
+sleep(2)
+print("20 anos!!!")
+sleep(3)
 
-# system("cls")
+system("cls")
 
-# print("Um piloto decide deixar sua filha de apenas 10 anos")
-# sleep(2)
-# print("para se arriscar em uma viagem através do universo")
-# sleep(2)
-# print("juntamente com 3 cientistas para identificar um planeta similar à Terra.")
-# sleep(2)
+print("Um piloto decide deixar sua filha de apenas 10 anos")
+sleep(2)
+print("para se arriscar em uma viagem através do universo")
+sleep(2)
+print("juntamente com 3 cientistas para identificar um planeta similar à Terra.")
+sleep(2)
 
-# system("cls")
+system("cls")
 
 print("Você agora é esse piloto e deve escolher as ações corretas para SALVAR A HUMANIDADE!")
 sleep(2)
@@ -36,7 +36,7 @@ sleep(2)
 print("Na nave teremos 4 tripulantes. Você e 3 cientistas.")
 sleep(2)
 
-nave = Nave(2021, 100, "Terra", "Nenhum", "Láctea")
+nave = Nave(2021, 100, "Terra", "Nenhum", "Láctea", "Estável")
 lancarNave = str(input(f"\nVamos lançar nossa nave, {nomePiloto}? [S/N]: ")).upper().strip()[0]
 
 if lancarNave == "S":
