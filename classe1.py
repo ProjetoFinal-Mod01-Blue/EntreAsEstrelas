@@ -26,13 +26,45 @@ class Nave:
     def incrementaAno(self):
         self.anoAtual += 1
 
+    def chamaMenu(self):
+        print("Para qual planeta você deseja ir? ")
+        if self.galaxia == "Nova" and self.planetaChegada == "":
+            print("""
+            1 - Biós
+            2 - Agnostos
+            3 - Matér        
+            """)
+        elif self.galaxia == "Nova" and self.planetaChegada == "Biós":
+            print("""
+            2 - Agnostos
+            3 - Matér        
+            """)
+        elif self.galaxia == "Nova" and self.planetaChegada == "Agnostos":
+            print("""
+            1 - Biós
+            3 - Matér        
+            """)
+        elif self.galaxia == "Nova" and self.planetaChegada == "Matér":
+            print("""
+            1 - Biós
+            2 - Agnostos       
+            """)
+
+    def viajarEntrePlanetas(self, destino):
+        if destino == 1:
+            self.viajaPlanetaBios()
+        elif destino == 2:
+            self.viajaPlanetaAgnostos()
+        elif destino == 3:
+            self.viajaPlanetaMater()
+
     def efeitoRandom(self):
         resultado = randint(1,5)
         if resultado == 1:
             print("Pane elétrica! Você perdeu 2 anos terrestres enquanto reparava a nave.")
             self.anoAtual += 2
         if resultado == 2:
-            print("Pane elétrica! Você perdeu 2 anos terrestres enquanto reparava a nave.")
+            print("Traje especial despressurizado! Você perdeu 1 ano terrestre aguardando a pressurização.")
             self.anoAtual += 2
 
     def mudaGalaxia(self):

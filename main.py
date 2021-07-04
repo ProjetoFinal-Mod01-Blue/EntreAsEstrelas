@@ -78,42 +78,17 @@ if lancarNave == "S":
     nave.mudaGalaxia()
     print(nave)
 
-    print("Para qual planeta você deseja ir? ")
-    if nave.galaxia == "Nova" and nave.planetaChegada == "":
-        print("""
-        1 - Biós
-        2 - Agnostos
-        3 - Matér        
-        """)
-        escolhaPlaneta = int(input("Digite sua opção: "))
-
+    nave.chamaMenu()
+    escolhaPlaneta = int(input("Digite sua opção: "))
+    nave.viajarEntrePlanetas(escolhaPlaneta)
     nave.efeitoRandom()
-
-    if escolhaPlaneta == 1:
-        nave.viajaPlanetaBios()
-    elif escolhaPlaneta == 2:
-        nave.viajaPlanetaAgnostos()
-    elif escolhaPlaneta == 3:
-        nave.viajaPlanetaMater()
-
     print(nave)
-    # elif nave.galaxia == "Nova" and nave.planetaChegada == "Biós":
-    #     print("""
-    #     2 - Agnostos
-    #     3 - Matér        
-    #     """)
-    # elif nave.galaxia == "Nova" and nave.planetaChegada == "Agnóstos":
-    #     print("""
-    #     1 - Biós
-    #     3 - Matér        
-    #     """)
-    # elif nave.galaxia == "Nova" and nave.planetaChegada == "Agnóstos":
-    #     print("""
-    #     1 - Biós
-    #     3 - Matér        
-    #     """)
 
-
+    nave.chamaMenu()
+    escolhaPlaneta = int(input("Digite sua opção: "))
+    nave.viajarEntrePlanetas(escolhaPlaneta)
+    nave.efeitoRandom()
+    print(nave)
 else:
     print("Lançamento cancelado! Você desistiu e será o FIM DA HUMANIDADE!")
 
