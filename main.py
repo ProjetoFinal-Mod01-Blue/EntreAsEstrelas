@@ -20,23 +20,23 @@ from classe1 import Nave
 # else:
 #   print('O arquivo musica.mp3 não está no diretório do script Python')
 
-system("cls")
+# system("cls")
 
-print("Durante um período de escassez de alimentos")
-sleep(2)
-print("cientistas descobrem que a Terra tem uma data concreta para acabar...")
-sleep(2)
-print("20 anos!!!")
-sleep(3)
+# print("Durante um período de escassez de alimentos")
+# sleep(2)
+# print("cientistas descobrem que a Terra tem uma data concreta para acabar...")
+# sleep(2)
+# print("20 anos!!!")
+# sleep(3)
 
-system("cls")
+# system("cls")
 
-print("Um piloto decide deixar sua filha de apenas 10 anos")
-sleep(2)
-print("para se arriscar em uma viagem através do universo")
-sleep(2)
-print("juntamente com 3 cientistas para identificar um planeta similar à Terra.")
-sleep(2)
+# print("Um piloto decide deixar sua filha de apenas 10 anos")
+# sleep(2)
+# print("para se arriscar em uma viagem através do universo")
+# sleep(2)
+# print("juntamente com 3 cientistas para identificar um planeta similar à Terra.")
+# sleep(2)
 
 system("cls")
 
@@ -77,6 +77,42 @@ if lancarNave == "S":
     nave.incrementaAno()
     nave.mudaGalaxia()
     print(nave)
+
+    print("Para qual planeta você deseja ir? ")
+    if nave.galaxia == "Nova" and nave.planetaChegada == "":
+        print("""
+        1 - Biós
+        2 - Agnostos
+        3 - Matér        
+        """)
+        escolhaPlaneta = int(input("Digite sua opção: "))
+
+    nave.efeitoRandom()
+
+    if escolhaPlaneta == 1:
+        nave.viajaPlanetaBios()
+    elif escolhaPlaneta == 2:
+        nave.viajaPlanetaAgnostos()
+    elif escolhaPlaneta == 3:
+        nave.viajaPlanetaMater()
+
+    print(nave)
+    # elif nave.galaxia == "Nova" and nave.planetaChegada == "Biós":
+    #     print("""
+    #     2 - Agnostos
+    #     3 - Matér        
+    #     """)
+    # elif nave.galaxia == "Nova" and nave.planetaChegada == "Agnóstos":
+    #     print("""
+    #     1 - Biós
+    #     3 - Matér        
+    #     """)
+    # elif nave.galaxia == "Nova" and nave.planetaChegada == "Agnóstos":
+    #     print("""
+    #     1 - Biós
+    #     3 - Matér        
+    #     """)
+
 
 else:
     print("Lançamento cancelado! Você desistiu e será o FIM DA HUMANIDADE!")
