@@ -2,6 +2,23 @@ from ast import increment_lineno
 from time import sleep
 from os import system
 from classe1 import Nave
+# import pygame
+# import os   
+
+# pygame.init()
+# if os.path.exists('David_Bowie_-_Starman-192k.mp3'):
+#   pygame.mixer.music.load('David_Bowie_-_Starman-192k.mp3')
+#   pygame.mixer.music.play()
+#   pygame.mixer.music.set_volume(1)
+
+#   clock = pygame.time.Clock()
+#   clock.tick(10)
+
+#   while pygame.mixer.music.get_busy():
+#      pygame.event.poll()
+#      clock.tick(10)
+# else:
+#   print('O arquivo musica.mp3 não está no diretório do script Python')
 
 system("cls")
 
@@ -36,7 +53,7 @@ sleep(2)
 print("Na nave teremos 4 tripulantes. Você e 3 cientistas.")
 sleep(2)
 
-nave = Nave(2021, 100, "Terra", "Nenhum", "Láctea", "Estável")
+nave = Nave(2021, 100, "Terra", "", "Via Láctea", "Estável")
 lancarNave = str(input(f"\nVamos lançar nossa nave, {nomePiloto}? [S/N]: ")).upper().strip()[0]
 
 if lancarNave == "S":

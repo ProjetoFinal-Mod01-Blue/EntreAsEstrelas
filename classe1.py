@@ -23,8 +23,11 @@ class Nave:
     def incrementaAno(self):
         self.anoAtual += 1
 
-    def mudaGalaxia(self):
+    def mudaGalaxiaNova(self):
         self.galaxia = "Nova"
+
+    def mudaGalaxiaNova(self):
+        self.galaxia = "Via Láctea"
 
     def viajaPlanetaBios(self):
         self.planetaChegada = "Biós"
