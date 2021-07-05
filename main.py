@@ -67,8 +67,9 @@ if lancarNave == "S":
     sleep(1)
     print("\nVocê está no espaço! Se dirigindo ao buraco de minhoca!")
     sleep(2)
-    print(f"\nO ano atual é 2021 e sua nave está transportando embriões humanos para caso a volta não seja possível.")
-    sleep(2)
+    print(f"\nO ano atual é 2021 e sua nave está transportando embriões \
+        humanos para caso a volta não seja possível.")
+    sleep(3)
 
     print(nave)
     sleep(2)
@@ -77,18 +78,28 @@ if lancarNave == "S":
     nave.incrementaAno()
     nave.mudaGalaxia()
     print(nave)
+    sleep(2)
 
     nave.chamaMenu()
     escolhaPlaneta = int(input("Digite sua opção: "))
     nave.viajarEntrePlanetas(escolhaPlaneta)
     nave.efeitoRandom()
     print(nave)
+    sleep(2)
 
     nave.chamaMenu()
     escolhaPlaneta = int(input("Digite sua opção: "))
     nave.viajarEntrePlanetas(escolhaPlaneta)
     nave.efeitoRandom()
     print(nave)
+    sleep(2)
+
+    nave.chamaMenu()
+    escolhaPlaneta = int(input("Digite sua opção: "))
+    nave.viajarEntrePlanetas(escolhaPlaneta)
+    nave.efeitoRandom()
+    print(nave)
+    sleep(2)
 else:
     print("Lançamento cancelado! Você desistiu e será o FIM DA HUMANIDADE!")
 

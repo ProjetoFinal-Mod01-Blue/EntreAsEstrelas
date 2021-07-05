@@ -17,7 +17,7 @@ class Nave:
     Planeta de chegada: {self.planetaChegada}
     Galáxia Atual: {self.galaxia}   
     Comunicação: {self.comunicacao}   
-        """
+    """
 
     def verificaCombustivel(self):
         if self.combustivel <= 0:
@@ -65,28 +65,45 @@ class Nave:
             self.anoAtual += 2
         if resultado == 2:
             print("Traje especial despressurizado! Você perdeu 1 ano terrestre aguardando a pressurização.")
-            self.anoAtual += 2
+            self.anoAtual += 1
 
     def mudaGalaxia(self):
         if self.galaxia == "Via Láctea":
             self.galaxia = "Nova"
         elif self.galaxia == "Nova":
             self.galaxia = "Via Láctea"
-        self.planetaPartida == ""
+        self.planetaPartida = ""
         self.planetaChegada = ""
 
     def viajaPlanetaBios(self):
         self.planetaChegada = "Biós"
         self.combustivel -= 10
         self.anoAtual += 2
+        print('''
+        As informações não estão corretas, o planeta não é habitável, 
+        sem oxigênio. É todo coberto por gelo.
+        -10% de combustível
+        Se passaram 2 anos terrestres.
+        ''')
 
     def viajaPlanetaAgnostos(self):
         self.planetaChegada = "Agnostos"
         self.combustivel -= 70
         self.anoAtual += 3
+        print('''
+        O planeta é todo coberto por água. Não habitável.
+        -70% de combustível
+        Se passaram 3 anos terrestres.
+        ''')
 
     def viajaPlanetaMater(self):
         self.planetaChegada = "Matér"
         self.combustivel -= 20
         self.anoAtual += 14
         self.comunicacao = "Instável"
+        print('''
+        Planeta muito parecido com a Terra. Habitável.
+        O sistema de comunicação foi comprometido na entrada da atmosfera.
+        -20% de combustível
+        Se passaram 14 anos terrestres.
+        ''')
