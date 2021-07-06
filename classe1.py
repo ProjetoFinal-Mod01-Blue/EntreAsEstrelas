@@ -30,24 +30,26 @@ class Nave:
         print("Para qual planeta você deseja ir? ")
         if self.galaxia == "Nova" and self.planetaChegada == "":
             print("""
-            1 - Biós
-            2 - Agnostos
-            3 - Matér        
+            1 - Biós (Mais promissor)
+            2 - Agnostos (Planeta similar à Terra)
+            3 - Matér (Pode não ser habitável)        
             """)
         elif self.galaxia == "Nova" and self.planetaChegada == "Biós":
             print("""
-            2 - Agnostos
-            3 - Matér        
+            Vamos tentar outro planeta? 
+
+            2 - Agnostos (Planeta similar à Terra)
+            3 - Matér (Pode não ser habitável)
+            0 - Voltar para Terra       
             """)
         elif self.galaxia == "Nova" and self.planetaChegada == "Agnostos":
             print("""
-            1 - Biós
-            3 - Matér        
+            3 - Matér (Pode não ser habitável)
+            0 - Voltar para Terra           
             """)
         elif self.galaxia == "Nova" and self.planetaChegada == "Matér":
             print("""
-            1 - Biós
-            2 - Agnostos       
+            0 - Voltar para Terra         
             """)
 
     def viajarEntrePlanetas(self, destino):
@@ -57,6 +59,13 @@ class Nave:
             self.viajaPlanetaAgnostos()
         elif destino == 3:
             self.viajaPlanetaMater()
+        elif self.planetaChegada == "Biós" and destino == 0:
+            print("Coragem!! A humanidade depende de você, por favor não desista.")
+        elif self.planetaChegada == "Agnostos" and destino == 0:
+            print("Você voltou para a Terra e encontrou sua filha pela última vez.")
+        elif self.planetaChegada == "Matér" and destino == 0:
+            print("Você está voltando para a Terra")
+
 
     def efeitoRandom(self):
         resultado = randint(1,5)

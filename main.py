@@ -68,7 +68,7 @@ if lancarNave == "S":
     print("\nVocê está no espaço! Se dirigindo ao buraco de minhoca!")
     sleep(2)
     print(f"\nO ano atual é 2021 e sua nave está transportando embriões \
-        humanos para caso a volta não seja possível.")
+humanos para caso a volta não seja possível.")
     sleep(3)
 
     print(nave)
