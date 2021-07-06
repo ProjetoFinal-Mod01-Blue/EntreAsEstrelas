@@ -23,9 +23,6 @@ class Nave:
         if self.combustivel <= 0:
             return "Você ficou sem combustível."
 
-    def incrementaAno(self):
-        self.anoAtual += 1
-
     def chamaMenu(self):
         print("Para qual planeta você deseja ir? ")
         if self.galaxia == "Nova" and self.planetaChegada == "":
@@ -60,9 +57,15 @@ class Nave:
         elif destino == 3:
             self.viajaPlanetaMater()
         elif self.planetaChegada == "Biós" and destino == 0:
-            print("Coragem!! A humanidade depende de você, por favor não desista.")
+            while destino == 0:
+                print("Coragem!! A humanidade depende de você, por favor não desista.")
+                destino = int(input("Digite sua opção: "))
         elif self.planetaChegada == "Agnostos" and destino == 0:
-            print("Você voltou para a Terra e encontrou sua filha pela última vez.")
+            resposta = str(input("Você quer desistir de voltar para a Terra e iniciar uma nova humanidade neste planeta? [S/N]: "))
+            if resposta == "S":
+                print("Parabéns pela decisão, mas tente ensinar mais amor e menos ódio para esta nova geração.")
+            else:
+                print("Você voltou para a Terra e encontrou sua filha pela última vez.")
         elif self.planetaChegada == "Matér" and destino == 0:
             print("Você está voltando para a Terra")
 
@@ -83,12 +86,14 @@ class Nave:
             self.galaxia = "Via Láctea"
         self.planetaPartida = ""
         self.planetaChegada = ""
+        self.anoAtual += 1
 
     def viajaPlanetaBios(self):
         self.planetaChegada = "Biós"
         self.combustivel -= 10
         self.anoAtual += 2
         print('''
+        PLANETA BIÓS:
         As informações não estão corretas, o planeta não é habitável, 
         sem oxigênio. É todo coberto por gelo.
         -10% de combustível
@@ -100,6 +105,7 @@ class Nave:
         self.combustivel -= 70
         self.anoAtual += 3
         print('''
+        PLANETA AGNOSTOS:
         O planeta é todo coberto por água. Não habitável.
         -70% de combustível
         Se passaram 3 anos terrestres.
@@ -111,6 +117,7 @@ class Nave:
         self.anoAtual += 14
         self.comunicacao = "Instável"
         print('''
+        PLANETA MATÉR:
         Planeta muito parecido com a Terra. Habitável.
         O sistema de comunicação foi comprometido na entrada da atmosfera.
         -20% de combustível
