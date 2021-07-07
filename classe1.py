@@ -75,9 +75,14 @@ class Nave:
                 else:
                     continue
         elif self.planetaChegada == "Matér" and destino == 0:
-            print("Você está voltando para a Terra")
+            print("Seu combustível acabou. É o fim da humanidade...")
             sleep(4)
-            print("Fim de jogo!")
+            print("""
+            Espera! Surgiram seres da 5ª dimensão e resolveram nos ajudar para termos outra chance.
+            Você aprendeu VIAGEM NO TEMPO!
+
+            Você conseguiu ver sua filha e salvar a humanidade!
+            """)
             
 
 
