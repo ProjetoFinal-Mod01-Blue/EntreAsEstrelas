@@ -1,5 +1,6 @@
 from random import randint
 from time import sleep
+from function import encerrar
 
 class Nave:
     def __init__(self, anoAtual, combustivel, planetaPartida, planetaChegada, galaxia, comunicacao):
@@ -67,22 +68,20 @@ class Nave:
             while True:
                 resposta = str(input("Você quer desistir de voltar para a Terra e iniciar uma nova humanidade neste planeta? [S/N]: ")).upper().strip()[0]
                 if resposta == "S":
-                    print("Parabéns pela decisão, mas tente ensinar mais amor e menos ódio para esta nova geração.")
+                    print("Parabéns pela decisão,ela foi de muita astúcia. Mas tente ensinar mais amor e menos ódio para esta nova geração.")
                     break
                 elif resposta == "N":
                     print("Você voltou para a Terra e encontrou sua filha pela última vez.")
                     break
                 else:
                     continue
+            # encerrar()
         elif self.planetaChegada == "Matér" and destino == 0:
-            print("Seu combustível acabou. É o fim da humanidade...")
-            sleep(4)
-            print("""
-            Espera! Surgiram seres da 5ª dimensão e resolveram nos ajudar para termos outra chance.
-            Você aprendeu VIAGEM NO TEMPO!
+            hist5 = ['Seu combustível acabou. É o fim da humanidade...','Espera! Surgiram seres da 5ª dimensão e resolveram nos ajudar para termos outra chance. Você aprendeu VIAGEM NO TEMPO!', ' Você conseguiu ver sua filha e salvar a humanidade!']
 
-            Você conseguiu ver sua filha e salvar a humanidade!
-            """)
+            for c in hist5:
+                print(c)
+                sleep(4)
             
 
 
@@ -115,6 +114,7 @@ class Nave:
         -10% de combustível
         Se passaram 2 anos terrestres.
         ''')
+        sleep(5)
 
     def viajaPlanetaAgnostos(self):
         self.planetaChegada = "Agnostos"
@@ -126,6 +126,7 @@ class Nave:
         -70% de combustível
         Se passaram 3 anos terrestres.
         ''')
+        sleep(5)
 
     def viajaPlanetaMater(self):
         self.planetaChegada = "Matér"
@@ -139,3 +140,4 @@ class Nave:
         -20% de combustível
         Se passaram 14 anos terrestres.
         ''')
+        sleep(5)
