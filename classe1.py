@@ -1,4 +1,5 @@
 from random import randint
+from time import sleep
 
 class Nave:
     def __init__(self, anoAtual, combustivel, planetaPartida, planetaChegada, galaxia, comunicacao):
@@ -59,15 +60,25 @@ class Nave:
         elif self.planetaChegada == "Biós" and destino == 0:
             while destino == 0:
                 print("Coragem!! A humanidade depende de você, por favor não desista.")
-                destino = int(input("Digite sua opção: "))
+                destino = 1
+                # destino = int(input("Digite sua opção: "))
         elif self.planetaChegada == "Agnostos" and destino == 0:
-            resposta = str(input("Você quer desistir de voltar para a Terra e iniciar uma nova humanidade neste planeta? [S/N]: "))
-            if resposta == "S":
-                print("Parabéns pela decisão, mas tente ensinar mais amor e menos ódio para esta nova geração.")
-            else:
-                print("Você voltou para a Terra e encontrou sua filha pela última vez.")
+            
+            while True:
+                resposta = str(input("Você quer desistir de voltar para a Terra e iniciar uma nova humanidade neste planeta? [S/N]: ")).upper().strip()[0]
+                if resposta == "S":
+                    print("Parabéns pela decisão, mas tente ensinar mais amor e menos ódio para esta nova geração.")
+                    break
+                elif resposta == "N":
+                    print("Você voltou para a Terra e encontrou sua filha pela última vez.")
+                    break
+                else:
+                    continue
         elif self.planetaChegada == "Matér" and destino == 0:
             print("Você está voltando para a Terra")
+            sleep(4)
+            print("Fim de jogo!")
+            
 
 
     def efeitoRandom(self):

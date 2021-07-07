@@ -66,6 +66,9 @@ if lancarNave == "S":
     print(nave)
     sleep(2)
 
+# nave.chamaMenu()
+# escolhaPlaneta = int(input("Digite sua opção: "))
+
 while fimDeJogo != 1:
 
     nave.chamaMenu()
@@ -78,17 +81,17 @@ while fimDeJogo != 1:
 else:
     print("Lançamento cancelado! Você desistiu e será o FIM DA HUMANIDADE!")
 
-pygame.init()
-if os.path.exists('David_Bowie_-_Starman-192k.mp3'):
-  pygame.mixer.music.load('David_Bowie_-_Starman-192k.mp3')
-  pygame.mixer.music.play()
-  pygame.mixer.music.set_volume(1)
+# pygame.init()
+# if os.path.exists('David_Bowie_-_Starman-192k.mp3'):
+#   pygame.mixer.music.load('David_Bowie_-_Starman-192k.mp3')
+#   pygame.mixer.music.play()
+#   pygame.mixer.music.set_volume(1)
 
-  clock = pygame.time.Clock()
-  clock.tick(10)
+#   clock = pygame.time.Clock()
+#   clock.tick(10)
 
-  while pygame.mixer.music.get_busy():
-     pygame.event.poll()
-     clock.tick(10)
-else:
-  print('O arquivo musica.mp3 não está no diretório do script Python')
+#   while pygame.mixer.music.get_busy():
+#      pygame.event.poll()
+#      clock.tick(10)
+# else:
+#   print('O arquivo musica.mp3 não está no diretório do script Python')
