@@ -64,7 +64,6 @@ class Nave:
 
                    2 - Agnostos (Planeta similar à Terra)
                    3 - Matér (Pode não ser habitável)
-                   0 - Voltar para Terra
                 """)
             # enquanto o valor não for nenhum dos possíveis continua solicitando a informação e exibindo opção inválida
             while True:
