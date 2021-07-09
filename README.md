@@ -9,6 +9,8 @@
 
   Você será responsável por determinar o inicio e término do dia do seu personagem, além de avançar o tempo a cada escolha.É obrigatório o uso de orientação a objetos (classes, encapsulamento e polimorfismo), funções, laços (while) e condicionais (if, elif, else). 
 
+##
+
 ###  🪐 Enredo do Jogo
   Foi unânime a decisão de construir um jogo inspirado no filme Interstellar. Quando se dá início ao jogo, o jogador passa a ser o piloto da nave e tem que decidir quais planetas irá explorar, afim de encontrar um planeta substitudo à Terra para que a humanidade possa se restabelecer. Você deve decidir entre criar uma nova civilização ou voltar para Terra e ficar com sua família.
 
@@ -32,12 +34,12 @@
 - PyCharm
 - Excel (Criação do Brainstorm)
 
-### :heavy_check_mark: Constribuições
-<p>Teve uma idéia legal de como melhorar o jogo e está afim de colocar em prática? <a href="https://github.com/ProjetoFinal-Mod01-Blue/EntreAsEstrelas/pulls">Contribua Conosco!</a></p>
-
 ### :large_blue_circle: Time 4 
 
  | [<img alt="Alexandre" height="150"  width="150" src="https://avatars.githubusercontent.com/u/83734517?v=4"><br><sub>Alexandre Carlos</sub>](https://github.com/Alexandre481)| [<img alt="Dara" width="150" src="https://avatars.githubusercontent.com/u/81888608?v=4"><br><sub>Dara Fontoura</sub>](https://github.com/mdar4) | [<img alt="Lucas" width="150" src="https://avatars.githubusercontent.com/u/17258174?v=4"><br><sub>Lucas</sub>](https://github.com/lucasbanksys)| [<img alt="Marla" width="150" src="https://avatars.githubusercontent.com/u/83611980?v=4"><br><sub>Marla Cabral</sub>](https://github.com/marlacabral) | [<img alt="Patrick" height="150" width="150" src="https://avatars.githubusercontent.com/u/85564550?v=4"><br><sub>Patrick Wendeel</sub>](https://github.com/wendeel-lima) |
  | :---: | :---: | :---: | :---: | :---:|
   
+### :heavy_check_mark: Constribuições
+<p>Teve uma idéia legal de como melhorar o jogo e está afim de colocar em prática? <a href="https://github.com/ProjetoFinal-Mod01-Blue/EntreAsEstrelas/pulls">Contribua Conosco!</a></p>
 
+##
