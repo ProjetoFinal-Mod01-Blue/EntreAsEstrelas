@@ -39,7 +39,7 @@
  | [<img alt="Alexandre" height="148"  width="150" src="https://avatars.githubusercontent.com/u/83734517?v=4"><br><sub>Alexandre Carlos</sub>](https://github.com/Alexandre481)| [<img alt="Dara" width="150" src="https://avatars.githubusercontent.com/u/81888608?v=4"><br><sub>Dara Fontoura</sub>](https://github.com/mdar4) | [<img alt="Lucas" width="150" src="https://avatars.githubusercontent.com/u/17258174?v=4"><br><sub>Lucas Soares</sub>](https://github.com/lucasbanksys)| [<img alt="Marla" width="150" src="https://avatars.githubusercontent.com/u/83611980?v=4"><br><sub>Marla Cabral</sub>](https://github.com/marlacabral) | [<img alt="Patrick" height="148" width="150" src="https://avatars.githubusercontent.com/u/85564550?v=4"><br><sub>Patrick Wendeel</sub>](https://github.com/wendeel-lima) |
  | :---: | :---: | :---: | :---: | :---:|
   
-### :heavy_check_mark: Constribuições
+### :heavy_check_mark: Contribuições
 <p>Teve uma idéia legal de como melhorar o jogo e está afim de colocar em prática? <a href="https://github.com/ProjetoFinal-Mod01-Blue/EntreAsEstrelas/pulls">Contribua Conosco!</a></p>
 
 ##
