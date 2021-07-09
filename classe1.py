@@ -1,4 +1,10 @@
+<<<<<<< HEAD
 # importação das bibliotecas
+=======
+from random import randint
+from time import sleep
+from function import encerrar
+>>>>>>> 1876f7bb8ab6de7d847114bf4e2df1adf818009e
 
 from random import randint    # biblioteca para gerar numeros aleatórios 
 from time import sleep       # biblioteca para usar pausas entre linhas de codigo
@@ -113,6 +119,7 @@ class Nave:
             while destino == 0:
                 print('Coragem!! A humanidade depende de você, por favor não desista.')
                 destino = 1
+<<<<<<< HEAD
         
         elif self.__planetaChegada == "Agnostos" and destino == 0:  
                     print("Você voltou para a Terra e encontrou sua filha pela última vez.")
@@ -128,6 +135,29 @@ class Nave:
                 print(c)
                 sleep(4)
             self.gameOver()
+=======
+                # destino = int(input("Digite sua opção: "))
+        elif self.planetaChegada == "Agnostos" and destino == 0:
+            
+            while True:
+                resposta = str(input("Você quer desistir de voltar para a Terra e iniciar uma nova humanidade neste planeta? [S/N]: ")).upper().strip()[0]
+                if resposta == "S":
+                    print("Parabéns pela decisão,ela foi de muita astúcia. Mas tente ensinar mais amor e menos ódio para esta nova geração.")
+                    break
+                elif resposta == "N":
+                    print("Você voltou para a Terra e encontrou sua filha pela última vez.")
+                    break
+                else:
+                    continue
+            # encerrar()
+        elif self.planetaChegada == "Matér" and destino == 0:
+            hist5 = ['Seu combustível acabou. É o fim da humanidade...','Espera! Surgiram seres da 5ª dimensão e resolveram nos ajudar para termos outra chance. Você aprendeu VIAGEM NO TEMPO!', ' Você conseguiu ver sua filha e salvar a humanidade!']
+
+            for c in hist5:
+                print(c)
+                sleep(4)
+            
+>>>>>>> 1876f7bb8ab6de7d847114bf4e2df1adf818009e
 
         elif self.__planetaChegada == "Matér" and destino == 4:
             hist6 = ['Você iniciou uma nova humanidade!' , 'Faça amor não faça guerra!']
